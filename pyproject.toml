@@ -18,8 +18,10 @@ dependencies = [
     "google-genai (>=1.17.0,<2.0.0)",
     "typeguard (>=4.4.2,<5.0.0)",
     "hf-xet>=1.1.5",
+    "streamlit>=1.48.1",
+    "umap-learn[plot]>=0.5.9.post2",
 ]
-packages = [{ from = "src", include = "xega" }]
+packages = [{ from = "src", include = "xega" }, { from = "src", include = "viz" }]
 
 [project.scripts]
 xega = "xega.cli.main:main"
